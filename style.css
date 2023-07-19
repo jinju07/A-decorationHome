@@ -1,0 +1,523 @@
+* {
+    padding:0;
+    margin:0;
+
+}
+
+/* 헤더 */
+header {
+    width:1200px;
+    height: 70px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 로고 */
+.logo {
+    width:200px;
+    height:100%;
+}
+
+/* 내비게이션 */
+nav {
+    width:500px;
+    height:100%;
+}
+
+nav>ul {
+    width:100%;
+    height:100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav li>a {
+    text-decoration: none;
+    color:#000;
+    font-size: 22px;
+}
+
+nav li>a:hover {
+    text-decoration: underline;
+}
+
+/* 로그인 / 회원가입 */
+
+/* header>div {
+    margin-top: -50px;
+} */
+
+.login {
+    text-decoration: none;
+    color:#000;
+}
+
+.login:hover {
+    text-decoration: underline;
+}
+
+.join {
+    text-decoration: none;
+    color:#000;
+}
+
+.join:hover {
+    text-decoration: underline;
+}
+
+/* 비주얼 */
+#visual {
+    width:100%;
+    height:700px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.visual-slide {
+    width:100%;
+    height:100%;
+    transition: all .5s;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    22.5% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    47.5% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    72.5% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    97.5% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.photo {
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+
+.photo:nth-child(1) {
+    background-image: url("./사진/house-2593489_1920.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.photo:nth-child(2) {
+    background-image: url("./사진/wall-416060_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    left:100%;
+}
+
+.photo:nth-child(3) {
+    background-image: url("./사진/apartment-lounge-3147892_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    left:200%;
+}
+
+/* 온라인 집들이 */
+
+#onlineHome {
+    width:1200px;
+    height:1300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px auto 0;
+}
+
+/* 첫번째 */
+.home1 {
+    width:500px;
+    height:400px;
+    overflow: hidden;
+}
+
+.one {
+    width:500px;
+    height:400px;
+    transition: all .5s;
+}
+
+.one:hover {
+    transform: translateX(-100%);
+}
+
+.box1 {
+    width:500px;
+    height:400px;
+    position: absolute;
+}
+
+.box1:nth-child(1) {
+    background-image: url("./housewarming_party/1_before.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box1:nth-child(2) {
+    background-image: url("./housewarming_party/1_after.jpg");
+    background-size: cover;
+    background-position: center;
+    left:100%;
+    transform: translateX(0%);
+    position:fixed
+}
+
+/* 두번째 */
+.home2 {
+    width:500px;
+    height:400px;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+.two {
+    width:500px;
+    height:400px;
+    transition: all .5s;
+}
+
+.two:hover {
+    transform: translateX(-100%);
+}
+
+.box2 {
+    width:500px;
+    height:400px;
+    position: absolute;
+}
+
+.box2:nth-child(1) {
+    background-image: url("./housewarming_party/2_before.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box2:nth-child(2) {
+    background-image: url("./housewarming_party/2_after.jpg");
+    background-size: cover;
+    background-position: center;
+    left:100%;
+    transform: translateX(0%);
+    position:fixed
+}
+
+/* 세번째 */
+.home3 {
+    width:500px;
+    height:400px;
+    overflow: hidden;
+    margin-top: 300px;
+}
+
+.three {
+    width:500px;
+    height:400px;
+    transition: all .5s;
+}
+
+.three:hover {
+    transform: translateX(-100%);
+}
+
+.box3 {
+    width:500px;
+    height:400px;
+    position: absolute;
+}
+
+.box3:nth-child(1) {
+    background-image: url("./housewarming_party/3_before.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box3:nth-child(2) {
+    background-image: url("./housewarming_party/3_after.jpg");
+    background-size: cover;
+    background-position: center;
+    left:100%;
+    transform: translateX(0%);
+    position:fixed
+}
+
+/* 네번째 */
+.home4 {
+    width:500px;
+    height:400px;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+.four {
+    width:500px;
+    height:400px;
+    transition: all .5s;
+}
+
+.four:hover {
+    transform: translateX(-100%);
+}
+
+.box4 {
+    width:500px;
+    height:400px;
+    position: absolute;
+}
+
+.box4:nth-child(1) {
+    background-image: url("./housewarming_party/4_before.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box4:nth-child(2) {
+    background-image: url("./housewarming_party/4_after.jpg");
+    background-size: cover;
+    background-position: center;
+    left:100%;
+    transform: translateX(0%);
+    position:fixed
+}
+
+/* */
+#onlineHome p {
+    font-size: 50px;
+    font-weight: bold;
+    color:#fff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+p>span {
+    color: orange;
+}
+
+#onlineHome button {
+    width:200px;
+    height:50px;
+    margin:50px  0  0 150px;
+}
+
+#onlineHome button:hover {
+    background-color: #5858587e;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-top:100px;
+}
+
+/* 전문가 (3D) */
+#specialist {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+/* 전문가1 */
+.specialist1 {
+    width:250px;
+    height:300px;
+    perspective: 300px;
+    border: 1px solid #000;
+}
+
+.item {
+    width:100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s;
+}
+
+.specialist1 .front {
+    background-image: url("./specialist/specialist1.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+.specialist1:hover .front {
+    transform: rotateY(180deg);
+}
+
+.specialist1 .back {
+    transform: rotateY(-180deg);
+}
+
+.specialist1:hover .back{
+    transform: rotateY(0deg);
+}
+
+/* 전문가2 */
+.specialist2 {
+    width:250px;
+    height:300px;
+    perspective: 300px;
+    border: 1px solid #000;
+    transition: 1s;
+}
+
+.specialist2 .front {
+    background-image: url("./specialist/specialist2.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+.specialist2:hover .front {
+    transform: rotateY(180deg);
+}
+
+.specialist2 .back {
+    transform: rotateY(-180deg);
+}
+
+.specialist2:hover .back{
+    transform: rotateY(0deg);
+}
+
+/* 전문가3 */
+.specialist3 {
+    width:250px;
+    height:300px;
+    perspective: 300px;
+    border: 1px solid #000;
+    transition: 1s;
+}
+
+.specialist3 .front {
+    background-image: url("./specialist/specialist3.jpg");
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+.specialist3:hover .front {
+    transform: rotateY(180deg);
+}
+
+.specialist3 .back {
+    transform: rotateY(-180deg);
+}
+
+.specialist3:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* 전문가4 */
+.specialist4 {
+    width:250px;
+    height:300px;
+    perspective: 300px;
+    border: 1px solid #000;
+    transition: 1s;
+}
+
+.specialist4 .front {
+    background-image: url("./specialist/specialist4.jpg");
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+.specialist4:hover .front {
+    transform: rotateY(180deg);
+}
+
+.specialist4 .back {
+    transform: rotateY(-180deg);
+}
+
+.specialist4:hover .back{
+    transform: rotateY(0deg);
+}
+
+/*  */
+#specialist p {
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top:50px;
+}
+
+/* 전문가 시공 후기 */
+
+#review {
+    width:1200px;
+    height:300px;
+    margin:50px auto 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#review p {
+    font-size: 25px;
+    padding:20px;
+}
+
+
+.first {
+    width:550px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #ffcecec5;
+}
+
+.second {
+    width:550px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #ffcecec5
+}
+
+/* 푸터 */
+footer {
+    width:100%;
+    height:300px;
+    background-color: #464343;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>b {
+    text-align: center;
+}
